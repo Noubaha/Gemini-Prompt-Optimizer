@@ -145,7 +145,7 @@ Full text: [`references/templates.md`](references/templates.md)
 
 ---
 
-## 🚫 37 credit-killing patterns detected
+## 🚫 40 credit-killing patterns detected
 
 Vague verbs, two tasks in one prompt, no success criteria, missing output format, no scope boundary, no stop condition for agents, hallucination invites, context rot, and more, each with a before/after fix.
 
