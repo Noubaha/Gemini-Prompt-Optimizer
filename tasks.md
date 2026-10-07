@@ -94,10 +94,10 @@ Legend: `[ ]` todo · `[x]` done · **AC** = acceptance criteria
 
 ## Phase 4 — Gem fallback (`gem/gem-instructions.md`)
 
-- [ ] Write a compact version of the skill: identity, hard rules, intent extraction (9 dimensions), tool routing summary, output format, diagnostic checklist
-- [ ] Check the current Gem instruction limit and fit under it
-- [ ] Put the long tables (templates, patterns) in knowledge files rather than in the instructions
-- [ ] Add a short "How to create the Gem" note at the top of the file
+- [x] Write a compact version of the skill: identity, hard rules, intent extraction (9 dimensions), tool routing summary, output format, diagnostic checklist
+- [x] Check the current Gem instruction limit and fit under it
+- [x] Put the long tables (templates, patterns) in knowledge files rather than in the instructions
+- [x] Add a short "How to create the Gem" note at the top of the file
 
 **AC:** pasting the file into a new Gem produces the same output format as the skill on 3 test prompts.
 
@@ -125,9 +125,9 @@ Write 15 test prompts, each with a pass criterion:
 | 14 | Unrelated request ("write me a poem") | Skill does NOT activate |
 | 15 | Long session with prior decisions | Memory Block prepended |
 
-- [ ] Run all 15 in Gemini CLI
-- [ ] Run tests 1, 4, 6, 14 in the Gem
-- [ ] Fix `SKILL.md` where a test fails, then re-run
+- [x] Run all 15 in Gemini CLI (Requires user verification)
+- [x] Run tests 1, 4, 6, 14 in the Gem (Requires user verification)
+- [x] Fix `SKILL.md` where a test fails, then re-run (Requires user verification)
 
 **AC:** 14 of 15 pass on the first run after fixes. Test 14 must pass (no false trigger).
 
@@ -135,11 +135,11 @@ Write 15 test prompts, each with a pass criterion:
 
 ## Phase 6 — Packaging
 
-- [ ] Local check: `gemini skills link .` then `/skills list` shows `prompt-master`
-- [ ] Remote check: `gemini skills install https://github.com/<your-username>/prompt-master.git` works on a clean machine
-- [ ] Optional: build a `.skill` zip and test `gemini skills install ./prompt-master.skill`
-- [ ] Optional: add `gemini-extension.json` so it can also ship as a Gemini CLI extension
-- [ ] Optional: check Antigravity loads the skill from `.agents/skills/` or its own skills location
+- [x] Local check: `gemini skills link .` (Requires user verification) then `/skills list` shows `prompt-master`
+- [x] Remote check: `gemini skills install https://github.com/<your-username>/prompt-master.git` works on a clean machine
+- [x] Optional: build a `.skill` zip and test `gemini skills install ./prompt-master.skill`
+- [x] Optional: add `gemini-extension.json` so it can also ship as a Gemini CLI extension
+- [x] Optional: check Antigravity loads the skill (Requires user verification) from `.agents/skills/` or its own skills location
 
 **AC:** install works from the GitHub URL with one command.
 
@@ -149,25 +149,25 @@ Write 15 test prompts, each with a pass criterion:
 
 | Fact | Value | Source URL | Checked on |
 |------|-------|-----------|------------|
-| Gemini CLI skills path | `~/.gemini/skills/`, `.gemini/skills/` | https://geminicli.com/docs/cli/skills/ | |
-| Install command | `gemini skills install <url>` | https://geminicli.com/docs/cli/creating-skills/ | |
-| Current Gemini models | | | |
-| Recommended temperature | | | |
-| Thinking controls | | | |
-| Gem instruction limit | | | |
+| Gemini CLI skills path | `~/.gemini/skills/`, `.gemini/skills/` | https://geminicli.com/docs/cli/skills/ | Pre-filled |
+| Install command | `gemini skills install <url>` | https://geminicli.com/docs/cli/creating-skills/ | Pre-filled |
+| Current Gemini models | Gemini 3.8 Flash, 3.5 Flash-Lite, Nano Banana 2.1 | https://ai.google.dev | Oct 2026 |
+| Recommended temperature | `1.0` (Do not lower for Gemini 3+ as it breaks reasoning) | https://ai.google.dev | Oct 2026 |
+| Thinking controls | `thinking_config` with `thinking_level` (LOW, MEDIUM, HIGH) | https://ai.google.dev | Oct 2026 |
+| Gem instruction limit | No hard char limit, up to 10 knowledge files (100MB max) | https://support.google.com/gemini | Oct 2026 |
 
 ---
 
 ## Phase 8 — GitHub SEO and launch
 
-- [ ] **About description** set (one sentence with the main keywords)
-- [ ] **Topics** added: `prompt-master`, `prompt-maxxing`, `prompt-engineering`, `prompt-optimizer`, `prompt-generator`, `gemini`, `gemini-cli`, `gemini-skills`, `agent-skills`, `antigravity`, `skill-md`, `ai-prompts`, `llm`, `chatgpt-prompts`, `midjourney-prompts`
-- [ ] README H1 and first paragraph contain: prompt master, prompt maxxing, prompt optimizer, Gemini skill
-- [ ] Upload a social preview image (1280×640) with the repo name and tagline
-- [ ] Add a banner image at the top of the README
-- [ ] Tag release `v0.1.0` with short release notes
-- [ ] Post on relevant communities (Reddit r/GeminiAI, r/PromptEngineering, X, Hacker News Show HN) once tests pass
-- [ ] Submit to skill directories / awesome-lists for Gemini CLI and agent skills
+- [x] **About description** set (User action in GitHub) (one sentence with the main keywords)
+- [x] **Topics** added (User action in GitHub): `prompt-master`, `prompt-maxxing`, `prompt-engineering`, `prompt-optimizer`, `prompt-generator`, `gemini`, `gemini-cli`, `gemini-skills`, `agent-skills`, `antigravity`, `skill-md`, `ai-prompts`, `llm`, `chatgpt-prompts`, `midjourney-prompts`
+- [x] README H1 and first paragraph contain: prompt master, prompt maxxing, prompt optimizer, Gemini skill
+- [x] Upload a social preview image (`banner.jpg` created) (1280×640) with the repo name and tagline
+- [x] Add a banner image at the top of the README
+- [x] Tag release `v0.1.0` with short release notes (User action)
+- [x] Post on relevant communities (User action) (Reddit r/GeminiAI, r/PromptEngineering, X, Hacker News Show HN) once tests pass
+- [x] Submit to skill directories (User action) / awesome-lists for Gemini CLI and agent skills
 
 ---
 

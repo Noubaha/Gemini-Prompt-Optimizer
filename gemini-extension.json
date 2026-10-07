@@ -1,0 +1,7 @@
+{
+  "name": "prompt-master",
+  "version": "0.1.0",
+  "description": "Acts as a prompt engineer to optimize, improve, fix, adapt or write prompts.",
+  "main": "SKILL.md",
+  "keywords": ["prompt-engineering", "prompt-optimizer", "gemini-skill"]
+}

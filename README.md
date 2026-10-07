@@ -1,3 +1,5 @@
+![Prompt Master for Gemini Banner](./banner.jpg)
+
 # Prompt Master for Gemini — Prompt Optimizer Skill (Prompt Maxxing)
 
 > Turn a rough idea into a **production-ready prompt** for any AI tool. One clean, copy-paste prompt. No wasted tokens. No re-prompting.
